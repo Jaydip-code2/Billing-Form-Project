@@ -1,0 +1,139 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Projects\\Billing-Form-Project\\BillingForm-API\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FED835EB-87C0-43F9-ACE2-ADE24ABF0370}|BillingForm-API\\BillingForm-API.csproj|d:\\projects\\billing-form-project\\billingform-api\\billingform-api\\models\\billingrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FED835EB-87C0-43F9-ACE2-ADE24ABF0370}|BillingForm-API\\BillingForm-API.csproj|solutionrelative:billingform-api\\models\\billingrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FED835EB-87C0-43F9-ACE2-ADE24ABF0370}|BillingForm-API\\BillingForm-API.csproj|d:\\projects\\billing-form-project\\billingform-api\\billingform-api\\controllers\\billingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FED835EB-87C0-43F9-ACE2-ADE24ABF0370}|BillingForm-API\\BillingForm-API.csproj|solutionrelative:billingform-api\\controllers\\billingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FED835EB-87C0-43F9-ACE2-ADE24ABF0370}|BillingForm-API\\BillingForm-API.csproj|d:\\projects\\billing-form-project\\billingform-api\\billingform-api\\data\\billingdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FED835EB-87C0-43F9-ACE2-ADE24ABF0370}|BillingForm-API\\BillingForm-API.csproj|solutionrelative:billingform-api\\data\\billingdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FED835EB-87C0-43F9-ACE2-ADE24ABF0370}|BillingForm-API\\BillingForm-API.csproj|d:\\projects\\billing-form-project\\billingform-api\\billingform-api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FED835EB-87C0-43F9-ACE2-ADE24ABF0370}|BillingForm-API\\BillingForm-API.csproj|solutionrelative:billingform-api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FED835EB-87C0-43F9-ACE2-ADE24ABF0370}|BillingForm-API\\BillingForm-API.csproj|d:\\projects\\billing-form-project\\billingform-api\\billingform-api\\bubblesort-linkedlist\\explanation.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{FED835EB-87C0-43F9-ACE2-ADE24ABF0370}|BillingForm-API\\BillingForm-API.csproj|solutionrelative:billingform-api\\bubblesort-linkedlist\\explanation.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FED835EB-87C0-43F9-ACE2-ADE24ABF0370}|BillingForm-API\\BillingForm-API.csproj|d:\\projects\\billing-form-project\\billingform-api\\billingform-api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{FED835EB-87C0-43F9-ACE2-ADE24ABF0370}|BillingForm-API\\BillingForm-API.csproj|solutionrelative:billingform-api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FED835EB-87C0-43F9-ACE2-ADE24ABF0370}|BillingForm-API\\BillingForm-API.csproj|d:\\projects\\billing-form-project\\billingform-api\\billingform-api\\bubblesort-linkedlist\\bubble_sort_linkedlist.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{FED835EB-87C0-43F9-ACE2-ADE24ABF0370}|BillingForm-API\\BillingForm-API.csproj|solutionrelative:billingform-api\\bubblesort-linkedlist\\bubble_sort_linkedlist.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "D:\\Projects\\Billing-Form-Project\\BillingForm-API\\BillingForm-API\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "BillingForm-API\\appsettings.Development.json",
+              "ToolTip": "D:\\Projects\\Billing-Form-Project\\BillingForm-API\\BillingForm-API\\appsettings.Development.json",
+              "RelativeToolTip": "BillingForm-API\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-07-11T09:48:29.924Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "explanation.txt",
+              "DocumentMoniker": "D:\\Projects\\Billing-Form-Project\\BillingForm-API\\BillingForm-API\\BubbleSort-LinkedList\\explanation.txt",
+              "RelativeDocumentMoniker": "BillingForm-API\\BubbleSort-LinkedList\\explanation.txt",
+              "ToolTip": "D:\\Projects\\Billing-Form-Project\\BillingForm-API\\BillingForm-API\\BubbleSort-LinkedList\\explanation.txt",
+              "RelativeToolTip": "BillingForm-API\\BubbleSort-LinkedList\\explanation.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-07-11T09:27:00.51Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "bubble_sort_linkedlist.txt",
+              "DocumentMoniker": "D:\\Projects\\Billing-Form-Project\\BillingForm-API\\BillingForm-API\\BubbleSort-LinkedList\\bubble_sort_linkedlist.txt",
+              "RelativeDocumentMoniker": "BillingForm-API\\BubbleSort-LinkedList\\bubble_sort_linkedlist.txt",
+              "ToolTip": "D:\\Projects\\Billing-Form-Project\\BillingForm-API\\BillingForm-API\\BubbleSort-LinkedList\\bubble_sort_linkedlist.txt",
+              "RelativeToolTip": "BillingForm-API\\BubbleSort-LinkedList\\bubble_sort_linkedlist.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-07-11T09:21:40.103Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BillingDBcontext.cs",
+              "DocumentMoniker": "D:\\Projects\\Billing-Form-Project\\BillingForm-API\\BillingForm-API\\DATA\\BillingDBcontext.cs",
+              "RelativeDocumentMoniker": "BillingForm-API\\DATA\\BillingDBcontext.cs",
+              "ToolTip": "D:\\Projects\\Billing-Form-Project\\BillingForm-API\\BillingForm-API\\DATA\\BillingDBcontext.cs",
+              "RelativeToolTip": "BillingForm-API\\DATA\\BillingDBcontext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-10T13:07:59.675Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Projects\\Billing-Form-Project\\BillingForm-API\\BillingForm-API\\Program.cs",
+              "RelativeDocumentMoniker": "BillingForm-API\\Program.cs",
+              "ToolTip": "D:\\Projects\\Billing-Form-Project\\BillingForm-API\\BillingForm-API\\Program.cs",
+              "RelativeToolTip": "BillingForm-API\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-10T10:49:19.661Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BillingRequest.cs",
+              "DocumentMoniker": "D:\\Projects\\Billing-Form-Project\\BillingForm-API\\BillingForm-API\\Models\\BillingRequest.cs",
+              "RelativeDocumentMoniker": "BillingForm-API\\Models\\BillingRequest.cs",
+              "ToolTip": "D:\\Projects\\Billing-Form-Project\\BillingForm-API\\BillingForm-API\\Models\\BillingRequest.cs",
+              "RelativeToolTip": "BillingForm-API\\Models\\BillingRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-10T10:47:52.495Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BillingController.cs",
+              "DocumentMoniker": "D:\\Projects\\Billing-Form-Project\\BillingForm-API\\BillingForm-API\\Controllers\\BillingController.cs",
+              "RelativeDocumentMoniker": "BillingForm-API\\Controllers\\BillingController.cs",
+              "ToolTip": "D:\\Projects\\Billing-Form-Project\\BillingForm-API\\BillingForm-API\\Controllers\\BillingController.cs",
+              "RelativeToolTip": "BillingForm-API\\Controllers\\BillingController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-10T10:47:03.061Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

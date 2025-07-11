@@ -1,0 +1,34 @@
+﻿
+
+start 
+ set swapped = true
+ 
+ while swapped is true 
+    set swapped = false 
+    set i = head
+    set prev = null
+
+     while i is not null and i.next is not null 
+     set j = i.next
+
+     if i.data > j.data then
+      if prev is not null then
+        prev is not null then
+        prev.next =j 
+        else
+        head = j
+
+        i.next = j.next
+        j.next = i 
+
+        prev = j 
+        swapped = true
+
+        else
+        prev = i
+        i = i.next
+
+        end while
+        end while
+
+        end

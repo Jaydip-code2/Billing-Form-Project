@@ -1,0 +1,30 @@
+﻿
+
+
+Bubble Sort on Linked List - Explanation
+
+i have written this logic to perform bubble sort on a singly linked list. 
+But instead of swapping just the values of the nodes, I swapped the actual nodes by updating their .next pointers.
+
+Reason I chose node swapping:
+Sometimes, we might not be allowed to touch or change the data inside nodes directly (especially in real-world or sensitive data cases). So its better to change the positions of the nodes by adjusting links between them.
+
+My approach step by step:
+- First, I added a `swapped` variable to track whether any changes happened in each pass.
+- I used three pointers:
+   `i` for the current node  
+   `j` as the next node  
+   `prev` to remember the previous node before `i`
+- I kept comparing i and j. If `i.data > j.data`, then I performed the swap by adjusting their `.next` links.
+- If the current swap was at the head, I updated the head too.
+- I repeated this process until no more swaps were needed, meaning the list was sorted.
+
+For example:
+If input is:  
+5 > 1 > 12 > 85 > 42
+
+After sorting:  
+1 > 5 > 12 > 42 > 85
+
+This logic may look big at first but its simple once you understand the pointer movements. I tried to focus only on basic logic and used plain steps to make it understandable.
+

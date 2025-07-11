@@ -1,0 +1,25 @@
+{
+  "name": "billing-form-frontend",
+  "version": "1.0.0",
+  "description": "Billing Form Frontend with TypeScript",
+  "main": "dist/script.js",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "dev": "tsc && live-server --port=3000",
+    "start": "tsc && start src/index.html"
+  },
+  "keywords": [
+    "typescript",
+    "billing",
+    "form",
+    "frontend"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^9.2.0",
+    "live-server": "^1.2.2",
+    "typescript": "^5.0.0"
+  }
+}

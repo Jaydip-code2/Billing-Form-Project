@@ -1,0 +1,18 @@
+[
+  {
+    "ContainingType": "BillingForm_API.Controllers.BillingController",
+    "Method": "SubmitBilling",
+    "RelativePath": "api/Billing/submit",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "BillingForm_API.Models.BillingRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
