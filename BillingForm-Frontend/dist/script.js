@@ -1,90 +1,78 @@
 "use strict";
-document.addEventListener("DOMContentLoaded", () => {
-    const formElements = {
-        form: document.getElementById("billingForm"),
-        fullNameEl: document.getElementById("fullName"),
-        emailEl: document.getElementById("email"),
-        addressEl: document.getElementById("address"),
-        paymentError: document.getElementById("paymentError")
-    };
-    formElements.form.addEventListener("submit", function (e) {
-        e.preventDefault();
-        clearErrors();
-        const payment = document.querySelector('input[name="payment"]:checked');
-        const formData = {
-            FullName: formElements.fullNameEl.value.trim(),
-            Email: formElements.emailEl.value.trim(),
-            Address: formElements.addressEl.value.trim(),
-            PaymentMethod: payment ? payment.value : null
+class BillingForm {
+    constructor() {
+        this.form = document.getElementById("billingForm");
+        this.fullName = document.getElementById("fullName");
+        this.email = document.getElementById("email");
+        this.address = document.getElementById("address");
+        this.paymentError = document.getElementById("paymentError");
+        this.form.addEventListener("submit", (e) => this.onSubmit(e));
+    }
+    onSubmit(event) {
+        event.preventDefault();
+        this.clearErrors();
+        const data = {
+            fullName: this.fullName.value.trim(),
+            email: this.email.value.trim(),
+            address: this.address.value.trim(),
+            paymentMethod: this.getPaymentMethod(),
         };
-        let hasError = false;
-        if (formData.FullName === "") {
-            markInvalid(formElements.fullNameEl, "Full Name is required.");
-            hasError = true;
+        if (this.validate(data)) {
+            this.sendToApi(data);
         }
-        if (formData.Email === "") {
-            markInvalid(formElements.emailEl, "Email is required.");
-            hasError = true;
+        else {
+            alert("Please fix the form errors.");
         }
-        else if (!validateEmail(formData.Email)) {
-            markInvalid(formElements.emailEl, "Please enter a valid email address.");
-            hasError = true;
-        }
-        if (formData.Address === "") {
-            markInvalid(formElements.addressEl, "Address is required.");
-            hasError = true;
-        }
-        if (!payment) {
-            formElements.paymentError.textContent = "Please select a payment method.";
-            hasError = true;
-        }
-        if (hasError) {
-            alert("Please correct the highlighted fields.");
-            return;
-        }
-        submitFormData(formData);
-    });
-    function validateEmail(email) {
-        const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        return regex.test(email);
     }
-    function markInvalid(input, message) {
-        input.classList.add("invalid");
-        const errorDiv = document.getElementById(input.id + "Error");
-        if (errorDiv)
-            errorDiv.textContent = message;
+    getPaymentMethod() {
+        const selected = document.querySelector('input[name="payment"]:checked');
+        return selected ? selected.value : null;
     }
-    function clearErrors() {
-        document.querySelectorAll(".invalid").forEach((el) => {
-            el.classList.remove("invalid");
-        });
-        document.querySelectorAll(".error-message").forEach((el) => {
+    validate(data) {
+        let isValid = true;
+        !data.fullName && (this.showError("fullNameError", "Full Name is required."), isValid = false);
+        !data.email
+            ? (this.showError("emailError", "Email is required."), isValid = false)
+            : !this.isValidEmail(data.email) &&
+                (this.showError("emailError", "Invalid email address."), isValid = false);
+        !data.address && (this.showError("addressError", "Address is required."), isValid = false);
+        !data.paymentMethod &&
+            (this.paymentError.textContent = "Please select a payment method.", isValid = false);
+        return isValid;
+    }
+    showError(elementId, message) {
+        const el = document.getElementById(elementId);
+        el.textContent = message;
+    }
+    clearErrors() {
+        ["fullNameError", "emailError", "addressError", "paymentError"].forEach((id) => {
+            const el = document.getElementById(id);
             el.textContent = "";
         });
     }
-    async function submitFormData(formData) {
+    isValidEmail(email) {
+        const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return regex.test(email);
+    }
+    async sendToApi(data) {
         try {
-            const response = await fetch('https://localhost:7188/api/Billing/submit', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(formData)
+            const res = await fetch("https://localhost:7188/api/Billing/submit", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(data),
             });
-            if (response.ok) {
-                alert('Form submitted successfully!');
-                formElements.form.reset();
-                // Print submitted data to console
-                console.log(formData);
+            if (res.ok) {
+                alert("Form submitted successfully!");
+                this.form.reset();
             }
             else {
-                alert('Failed to submit form. Please try again.');
+                alert("Failed to submit form.");
             }
         }
-        catch (error) {
-            console.error('Error submitting form:', error);
-            alert('Failed to submit form. Please try again.');
+        catch (err) {
+            alert("Network error.");
+            console.error(err);
         }
     }
-});
-//# sourceMappingURL=script.js.map
+}
+new BillingForm();

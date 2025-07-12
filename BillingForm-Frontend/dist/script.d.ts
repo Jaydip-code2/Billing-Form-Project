@@ -1,14 +1,21 @@
-interface BillingFormData {
-    FullName: string;
-    Email: string;
-    Address: string;
-    PaymentMethod: string | null;
+interface BillingData {
+    fullName: string;
+    email: string;
+    address: string;
+    paymentMethod: string | null;
 }
-interface FormElements {
-    form: HTMLFormElement;
-    fullNameEl: HTMLInputElement;
-    emailEl: HTMLInputElement;
-    addressEl: HTMLInputElement;
-    paymentError: HTMLElement;
+declare class BillingForm {
+    private form;
+    private fullName;
+    private email;
+    private address;
+    private paymentError;
+    constructor();
+    private onSubmit;
+    private getPaymentMethod;
+    private validate;
+    private showError;
+    private clearErrors;
+    private isValidEmail;
+    private sendToApi;
 }
-//# sourceMappingURL=script.d.ts.map
